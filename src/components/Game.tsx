@@ -56,7 +56,10 @@ const Game = () => {
 
     return (
         <div style={{ width: "100vw", height: "100vh", position: "relative" }}>
-            <Canvas shadows style={{ width: windowSize.width, height: windowSize.height, cursor: "none" }}>
+            <Canvas
+                shadows
+                style={{ width: windowSize.width, height: windowSize.height, cursor: "none", background: "skyblue" }}
+            >
                 <Scene gameState={gameState} onTargetHit={handleTargetHit} onTargetDestroy={handleTargetDestroy} />
             </Canvas>
             <Crosshair />

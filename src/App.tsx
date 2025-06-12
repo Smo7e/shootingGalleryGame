@@ -4,6 +4,7 @@ export type GameState = "ready" | "playing" | "gameOver";
 
 export type ShapeType = "box" | "sphere" | "cone" | "torus" | "cylinder" | "octahedron";
 export type TargetProps = {
+    id: number;
     position: [number, number, number];
     shape: ShapeType;
     color: string;
